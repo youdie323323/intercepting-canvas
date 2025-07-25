@@ -17,6 +17,8 @@ where `ctx` is your CanvasRenderingContext2D object.
 
 5. The pseudo code will be displayed in your console.
 
+**Of course, turn this off when you're not using the script. It'll slow down games that use the Canvas 2D API a lot (since it records all operations).**
+
 ## How It Works
 
 This script intercepts Canvas 2D API calls and records them as readable JavaScript code. It works by:
@@ -43,4 +45,4 @@ ctx.fillStyle = "red";
 ctx.fillRect(0, 0, 100, 100);
 ```
 
-This generated code can be used to recreate the same canvas operations elsewhere.
+This generated code can be used to recreate the same canvas operations elsewhere.  
