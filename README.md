@@ -5,7 +5,7 @@ Records and generates replayable pseudo-code for all Canvas 2D API operations
 
 1. First, install the Tampermonkey browser extension.
 
-2. Add the Output.js to your Tampermonkey script. If needed, you can build from the TypeScript source code and combine it with the same Tampermonkey headers.
+2. Add the Script.js to your Tampermonkey script. If needed, you can build from the TypeScript source code and combine it with the same Tampermonkey headers.
 
 3. Navigate to the website where you want to record Canvas 2D API operations.
 
