@@ -17,7 +17,7 @@ where `ctx` is your CanvasRenderingContext2D object (An object can obtained by s
 
 5. The pseudo code will be displayed in your console.
 
-**Of course, turn this off when you're not using the script. It'll slow down games that use the Canvas 2D API a lot (since it records all operations).**
+**Of course, turn this script off when you're not using the script. It'll slow down games that use the Canvas 2D API a lot (since it records all operations).**
 
 ## Example Usage
 
