@@ -40,7 +40,7 @@ declare global {
 
             window.pathReferences.set(proxied, {
                 pseudoCode: [],
-                // The reason store of original instances, canvas methods with path2d arguments only accept 
+                // The reason store of original instances, canvas methods with path2d arguments only accepts 
                 // native-objects (means cant be proxied object)
                 originalPath: path,
             });
