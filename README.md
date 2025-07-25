@@ -13,18 +13,11 @@ Records and generates replayable pseudo-code for all Canvas 2D API operations
 ```javascript
 console.log(ctx.generatePseudoCode());
 ```
-where `ctx` is your CanvasRenderingContext2D object.
+where `ctx` is your CanvasRenderingContext2D object (An object can obtained by setting breakpoint on operation code). 
 
 5. The pseudo code will be displayed in your console.
 
 **Of course, turn this off when you're not using the script. It'll slow down games that use the Canvas 2D API a lot (since it records all operations).**
-
-## How It Works
-
-This script intercepts Canvas 2D API calls and records them as readable JavaScript code. It works by:
-- Proxying the native Canvas API methods
-- Recording all operations performed on the canvas
-- Generating equivalent JavaScript code that can reproduce the canvas operations
 
 ## Example Usage
 
