@@ -51,8 +51,8 @@ declare global {
 
     function createInterceptingOffscreenCanvas(original: OffscreenCanvas): OffscreenCanvas {
         return new Proxy(original, {
-            get(target: OffscreenCanvas, prop: string | symbol, receiver: any) {
-                if (prop === "getContext") {
+            get(target: OffscreenCanvas, propertyKey: string | symbol, receiver: any) {
+                if (propertyKey === "getContext") {
                     return function (contextType: "2d", options?: any) {
                         const ctx = target.getContext(contextType, options);
                         if (contextType === "2d") {
@@ -63,7 +63,7 @@ declare global {
                     };
                 }
 
-                return Reflect.get(target, prop, receiver);
+                return Reflect.get(target, propertyKey, receiver);
             },
         });
     }
